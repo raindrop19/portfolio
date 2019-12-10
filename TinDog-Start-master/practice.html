@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="practice.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <title></title>
+</head>
+
+<body>
+  <!-- Boostrap Grid System -->
+  <div class="row">
+    <div class="col" style="background-color:red; border: 1px solid">
+      col
+    </div>
+    <div class="col" style="background-color:red; border: 1px solid">
+      col
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border: 1px solid">
+      col
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border: 1px solid">
+      col
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border: 1px solid">
+      col
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border: 1px solid">
+      col
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color:green; border: 1px solid">
+      col
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color:orange; border: 1px solid">
+      col
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color:orange; border: 1px solid">
+      col
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color:orange; border: 1px solid">
+      col
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color:orange; border: 1px solid">
+      col
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color:orange; border: 1px solid">
+      col
+    </div>
+
+  </div>
+
+<!-- Container -->
+  <div class="container" style="background-color: yellow;">
+    orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </div>
+
+  <div class="container-fluid" style="background-color: red;">
+    <!-- always taking up 100% of the screen -->
+    orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </div>
+
+<!-- Carousel -->
+
+  <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+
+    <div class="carousel-inner">
+    <!-- data-ride="carousel" -> will autoplay "false" not play until you tell it to through keyboard or carousel button
+         (Autoplays the carousel after the user manually cycles the first item. If "carousel", autoplays the carousel on load.). -->
+    <!-- data-pause="hover" -> stop by default -->
+    <!-- data-interval="1000 -> =1s -->
+      <div class="carousel-inner" style="background-color: red;">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="..." alt="First slide">
+        </div>
+        <div class="carousel-item" style="background-color: yellow;">
+          <img class="d-block w-100" src="..." alt="Second slide">
+        </div>
+        <div class="carousel-item" style="background-color: blue;">
+          <img class="d-block w-100" src="..." alt="Third slide">
+        </div>
+      </div>
+
+        <!-- With controls -->
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+
+      </a>
+    </div>
+  </div>
+
+  <!-- Card -->
+
+  <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Free</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>10 users included</li>
+          <li>2 GB of storage</li>
+          <li>Email support</li>
+          <li>Help center access</li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Pro</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>20 users included</li>
+          <li>10 GB of storage</li>
+          <li>Priority email support</li>
+          <li>Help center access</li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Enterprise</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>30 users included</li>
+          <li>15 GB of storage</li>
+          <li>Phone and email support</li>
+          <li>Help center access</li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- self-made -->
+
+  <div class="card">
+    <div class="card-header">
+    Card Header
+    </div>
+
+    <div class="card-body">
+    Card Body
+    </div>
+
+    <div class="card-footer">
+    Card Footer
+    </div>
+  </div>
+
+
+<!-- Z-Index -->
+
+  <div class="index red">
+    Red
+  </div>
+
+  <div class="index yellow">
+    Yellow
+  </div>
+
+  <div class="index blue">
+    Blue
+  </div>
+
+<!-- Media Query -->
+  <h1>Hello World</h1>
+
+</body>
+
+</html>

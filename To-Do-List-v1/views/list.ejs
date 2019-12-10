@@ -1,0 +1,26 @@
+<%- include('header'); -%>
+<!-- this is to create an html template that with the header embedding the css file -->
+
+  <div class="box" id="heading">
+    <h1><%= listTitle %></h1>
+    <!-- needs a marker that tells the file to replace the variable -->
+  </div>
+
+  <div class="box">
+    <!-- delete ur and li so that the bullet point will disappear -->
+      <%for (var i=0; i<newListItems.length; i++) {%>
+      <div class="item">
+        <input type="checkbox">
+        <p><%= newListItems[i] %></p>
+      </div>
+      <%}%>
+      <!-- the ejs template has to be created by line       -->
+
+    <form class="" action="/" method="post">
+      <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+      <button type="submit" name="list" value=<%= listTitle %>>+</button>
+      <!-- in order to track which page the new item is added to, give the button a value/category -->
+    </form>
+  </div>
+
+<%- include('footer'); -%>

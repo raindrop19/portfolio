@@ -1,0 +1,25 @@
+<%- include('partials/header'); -%>
+
+
+<h1>Home</h1>
+<p><%= homeIntro %></p>
+
+<!-- 1. By using Array.protytype.forEach() method -->
+<% addedPosts.forEach(function(newPost) { %>
+    <% console.log(newPost.pTitle); %>
+    <h1><%= newPost.pTitle %></h1>
+    <p><%= newPost.pBody.substring(0,120) + "..."%>
+    <a href="/posts/<%= newPost.pTitle %>">Read More</a>
+    </p>
+<% }); %>
+
+
+<!-- 2. By using forloop -->
+
+<!-- <% for (var i=0; i<addedPosts.length; i++) { %>
+  <% console.log(addedPosts[i].pTitle) %>
+<% } %> -->
+<!-- nothing special to show on webpage, just log from home page -->
+
+
+<%- include('partials/footer'); -%>
