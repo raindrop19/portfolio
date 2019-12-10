@@ -1,3 +1,3 @@
 <h1>Portfolio</h1>
 
-This is my personal website.
+This is the projects I've created so far.
