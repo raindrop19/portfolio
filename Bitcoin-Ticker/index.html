@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bitcoin Ticker</title>
+</head>
+
+<body>
+
+  <form action="/" method="post">
+
+    <h1>Bitcoin Ticker</h1>
+
+    <input name="amount" placeholder="Quantity"></input>
+
+    <select name="crypto">
+      <!-- remember: the parameter has to be "name" instead of "class", the class body only returns "undefined" value! -->
+      <option value="BTC">Bitcoin</option>
+      <option value="ETH">Ethereum</option>
+      <option value="LTC">Litecoin</option>
+    </select>
+
+    <select name="fiat">
+      <option value="USD">US Dollars</option>
+      <option value="GBP">UK Pounds</option>
+      <option value="EUR">EU Euros</option>
+    </select>
+
+    <button type="submit" name="button">Check</button>
+  </form>
+
+</body>
+
+</html>
